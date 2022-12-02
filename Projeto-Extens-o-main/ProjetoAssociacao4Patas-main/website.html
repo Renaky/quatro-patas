@@ -50,6 +50,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link
       href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
       rel="stylesheet"
@@ -60,11 +61,51 @@
 
   <body>
     <nav
+    class="navbar navbar-default navbar-transparent navbar-fixed-top"
+    color-on-scroll="200"
+    style="height: 90px;"
+  >
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#pagetop"><img src="assets/img/Icone Associação.svg" 
+                  style=" height: 100px; width: 100px; " id="svg"alt="..." /></a>
+              </div> 
+                <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quem-somos">Sobre Nós</a></li>
+                    <li style="text-align: center;">
+                      <a
+                        href="https://www.instagram.com/associacao4patas/"
+                        target="blank"
+                        ><img
+                          src="./assets/img/instagram.png"
+                          alt="Insta"
+                          class="Icons"
+                      /></a>
+                    </li>
+                    <li  style="text-align: center;">
+                      <a
+                        href="https://pt-br.facebook.com/Associacao4Patas/"
+                        target="blank"
+                        ><img src="./assets/img/facebook.png" alt="Face" class="Icons"
+                      /></a>
+                      
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+   <!--  <nav
       class="navbar navbar-default navbar-transparent navbar-fixed-top"
       color-on-scroll="200"
       style="height: 90px;"
     >
-      <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+      <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"
       <div class="container-fluid">
         <div class="navbar-header">
           <div>
@@ -76,7 +117,7 @@
           /></div>
           
         </div>
-        <div class="navbar-collapse">
+        <div class="navbar-collapse" id="navbarResponsive">
           <ul class="nav navbar-nav navbar-right navbar-uppercase">
               <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
               <li class="nav-item"><a class="nav-link" href="#quem-somos">Sobre Nós</a></li>
@@ -99,37 +140,14 @@
                 
               </li>
           </ul>
-      <!-- </div>
-        <div class="navbar">
-          <ul class="nav navbar-nav navbar-right navbar-uppercase">
-            <li style="text-align: center;">
-              <a
-                href="https://www.instagram.com/associacao4patas/"
-                target="blank"
-                ><img
-                  src="./assets/img/instagram.png"
-                  alt="Insta"
-                  class="Icons"
-              /></a>
-            </li>
-            <li  style="text-align: center;">
-              <a
-                href="https://pt-br.facebook.com/Associacao4Patas/"
-                target="blank"
-                ><img src="./assets/img/facebook.png" alt="Face" class="Icons"
-              /></a>
-              
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+      
       </div>
-    </nav>
+    </nav> -->
 
     <div class="section section-header">
       <div class="parallax filter">
         <div
-          class="image"
+          class="image" id="pagetop"
           style="background-image: url('assets/img/Cachorro principal.jpg')"
         ></div>
       </div>
@@ -345,7 +363,8 @@
 
   <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
   <script type="text/javascript" src="assets/js/gaia.js"></script>
+  <script src="js/scripts.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 </html>
 
 
-<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
